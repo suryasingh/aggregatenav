@@ -1,0 +1,1690 @@
+
+
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  
+       url('../fonts/ProximaNova-Regular.otf')  format('opentype'),
+	   url('../fonts/ProximaNova-Regular.woff') format('woff'), 
+	   url('../fonts/ProximaNova-Regular.ttf')  format('truetype'), 
+	   url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  	   font-weight: normal;
+ 	   font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),  
+  	   url('../fonts/ProximaNova-Semibold.otf')  format('opentype'),
+	   url('../fonts/ProximaNova-Semibold.woff') format('woff'), 
+	   url('../fonts/ProximaNova-Semibold.ttf')  format('truetype'), 
+	   url('../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+	   font-weight: normal;
+ 	   font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/PROXIMANOVA-BOLD-webfont.eot?#iefix') format('embedded-opentype'),  
+       url('../fonts/PROXIMANOVA-BOLD-webfont.otf')  format('opentype'),
+	   url('../fonts/PROXIMANOVA-BOLD-webfont.woff2') format('woff2'),
+	   url('../fonts/PROXIMANOVA-BOLD-webfont.woff') format('woff'), 
+	   url('../fonts/PROXIMANOVA-BOLD-webfont.ttf')  format('truetype'), 
+	   url('../fonts/PROXIMANOVA-BOLD-webfont.svg#ProximaNova-Bold') format('svg');
+	   font-weight: normal;
+	   font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Extrabld';
+  src: url('../fonts/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),  
+  	   url('../fonts/ProximaNova-Extrabld.otf')  format('opentype'),
+	   url('../fonts/ProximaNova-Extrabld.woff') format('woff'), 
+	   url('../fonts/ProximaNova-Extrabld.ttf')  format('truetype'), 
+	   url('../fonts/ProximaNova-Extrabld.svg#ProximaNova-Extrabld') format('svg');
+	   font-weight: normal;
+	   font-style: normal;
+}
+@font-face {
+    font-family: 'exo_2regular';
+    src: url('../fonts/EXO2-REG-webfont.eot');
+    src: url('../fonts/EXO2-REG-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/EXO2-REG-webfont.woff2') format('woff2'),
+         url('../fonts/EXO2-REG-webfont.woff') format('woff'),
+         url('../fonts/EXO2-REG-webfont.ttf') format('truetype'),
+         url('../fonts/EXO2-REG-webfont.svg#exo_2regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	margin:0;
+	padding:0;
+	background: #FFFFFF url("../images/bg.jpg") repeat-x scroll left top;
+}
+
+a img{
+	border:none;
+}
+a:hover, a:visited{
+	text-decoration:none !important;	
+}
+a:focus{
+	outline: 0 !important;
+	text-decoration:none !important;	
+}
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+/* ======== Basic Styling ==========*/
+
+.btn-upgrade{
+	font-family: 'ProximaNova-Regular';
+	background-color:#ed552b;
+	border-radius:2px;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:14px;
+	border:none;
+	padding:11px 0;
+	width:111px;
+	text-align:center;
+	line-height: 12px;
+}
+.btn-default {
+    background-color: #4f94bb;
+    border: medium none;
+    color: #fff;
+	font: 17px "ProximaNova-Bold";
+	padding: 9px 38px;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background-color: #4f94bb;
+    border: medium none;
+    color: #fff;
+}
+.bp-lg-input {
+    display: block;
+    width: 100%;
+	margin-bottom:20px;
+	padding:10px 15px;
+	font-family: 'ProximaNova-Bold';
+	font-size:17px;
+	border:1px solid #daddde;
+	border-radius:3px; 
+}
+.bp-dropdown{
+	border: 1px solid #DADDDE;
+	border-radius: 3px;
+	box-shadow: 0px 12px 28px 7px rgba(0, 0, 0, 0.15);
+}
+
+.bp-dropdown{
+	margin:0;
+	padding:0;
+	position:absolute;
+	z-index: 999;
+	background-color: #fff;
+}
+.bp-dropdown li{
+	border-top: 1px solid #dddddd;
+	list-style-type: none;
+}
+.bp-dropdown li:first-child{
+	border-top: 0 none;
+}
+.bp-dropdown li a, .bp-dropdown li span{
+	color: #494949;
+	display: block;
+}
+/* ======= Header Starts ====== */
+
+.head_wrap{
+	padding:20px 0;
+	float:left;
+	width:100%;
+	background-color:#fff;
+	border-bottom:1px solid #dddddd;
+}
+.head_wrap header{
+	max-width:950px;
+	margin:0 auto;
+}
+.head_wrap header .logo{
+	float:left;
+	padding-top:5px;
+	padding-right: 24px;
+}
+.head_wrap header .global-search{
+	float:left;
+	border:1px solid #daddde;
+	border-radius:3px;
+	width:560px;
+	position:relative;
+	overflow:hidden
+}
+.head_wrap header .global-search .search-icon {
+    background: url("../images/sprite.png") no-repeat scroll -3px -513px transparent;
+    height: 16px;
+    position: absolute;
+    right: 12px;
+    top: 11px;
+    width: 16px;
+	cursor:pointer;
+}
+.head_wrap header .global-search input{		
+	font-family: 'ProximaNova-Bold';	
+	height: 38px;
+    margin: 0;
+    padding: 6px 35px 6px 12px;
+	border:none;
+	width: 100%;
+	color:#2f323a;
+}
+.head_wrap header .menu-bar{
+	float:right;
+	position:relative;
+	padding-top: 14px;
+	padding-right: 5px;
+}
+
+.head_wrap header .menu-bar .pop-launch{
+	background:url(../images/sprite.png) no-repeat scroll -2px -603px transparent;
+	width:16px;
+	height:15px;
+	display: block;
+}
+.pop-over {
+	background-color: #fff;
+	border: 1px solid #daddde;
+	border-radius: 3px;
+	box-shadow: 0 12px 28px 7px rgba(0, 0, 0, 0.15);
+	position: absolute;
+	z-index: 999;
+	top: 50px;
+	left: -132px;
+	visibility: visible;
+	opacity:1;
+	transition: opacity 0.3s ease 0s;
+}
+.pop-over .arrow-center{
+	border-bottom: 9px solid #cccccc;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	left: 47%;
+	top: -9px;
+	position: absolute;
+}
+.pop-over .arrow-center:after{
+	border-bottom: 9px solid #ffffff;
+	border-left: 8px solid transparent;
+	border-right: 9px solid transparent;
+	content: "";
+	height: 0;
+	left: -8px;
+	position: absolute;
+	top: 1px;
+}
+.pop-over .pop-over-content{
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:19px;
+	height: 155px;
+	width:279px;
+}
+.pop-over-footer{
+	border-top:1px solid #dddddd;
+}
+.pop-over .pop-over-footer{
+	float: left;
+	width: 100%;
+	padding-bottom: 15px;
+    padding-top: 13px;
+}
+.po-hide {
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0s;
+    visibility: hidden;
+}
+.menu-bar .signout-link{
+	background:url(../images/sprite.png) no-repeat scroll 0 -650px transparent;
+	color:#757575;
+	padding-left:25px;
+	float:right;
+	margin-right: 27px;
+	font-family: 'ProximaNova-Regular';
+}
+.menu-bar .user-dp{
+	float:left;	
+	overflow: hidden;
+	border: 1px solid #daddde;
+	border-radius: 100px;
+}
+.menu-bar .user-dp img{
+	width:100%;
+}
+.menu-bar .user-info {
+	float: left;
+	width: 183px;
+	padding-top: 3px;
+	padding-left: 18px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.menu-bar .user-info h2{
+	font-family: 'ProximaNova-Regular';
+	font-size:18px;
+	margin:0;
+	color:#2f323a;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-bottom: 6px;
+	white-space: nowrap;
+}
+.menu-bar .user-info a{
+	font-family: 'ProximaNova-Regular';
+	font-size:14px;	
+}
+.menu-bar .settings-wrp{
+	float:left;
+	width:100%;
+	padding-top:17px;
+	height: 99px;
+}
+.menu-bar .settings-link{
+	font-family: 'ProximaNova-Bold';
+	color:#4f95bb;	
+	float:left;	
+	margin-top:10px;
+}
+.menu-bar .btn-upgrade{
+	float:right;	
+}
+
+/* ========== Header Ends here =========*/
+
+.file-box{
+	float:left;
+	width:200px;
+	margin-bottom:65px;	
+	position: relative;
+}
+.file-box:hover > .file-actions .delete-file{
+	opacity:1;
+	
+}
+.file-box:hover > .file-wrp > .file-head .grid-launch{
+	background-position: -23px -905px !important;
+}
+.file-wrp{
+	border:1px solid #daddde;
+	border-bottom-width:2px;
+	min-height:237px;
+	float: left;
+    width: 100%;		
+}
+.file-box .file-head {
+	padding-left:12px;
+	padding-top:16px;
+	padding-bottom:16px;
+	height: 55px;
+}
+.file-box .file-head h2 {
+	font-family: 'ProximaNova-Bold';
+	color:#31343c;
+	font-size:16px;
+	margin:0;
+	text-align: left;
+	float:left;
+	max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.file-box .file-head .grid-launch{
+	background: url("../images/sprite.png") no-repeat scroll 2px -905px transparent;	
+	width:23px;
+	height:19px;
+	display:block;
+	float:right;
+	margin-right: 10px;
+    margin-top: 1px;
+	cursor:pointer;
+	padding:1px;
+}
+.file-box .file-head .title-extension{
+	font-family: 'ProximaNova-Bold';
+	color:#31343c;
+	font-size:16px;
+	float: left;
+	line-height: 16px;
+}
+.file-box .file-thumb {
+    position: relative;
+}
+.file-box .file-extension{
+	font-family: 'ProximaNova-Bold';
+	border:2px solid #aaaaaa;
+	border-radius:2px;
+	background-color:#edf0f0;
+	color:#aaaaaa;	
+	left: 11px;
+	bottom: 11px;
+	position:absolute;
+	padding:0 6px;
+}
+.file-box .file-owner {
+	border-top:1px solid #daddde;
+	padding-top:11px;
+	padding-bottom:10px;
+	padding-left:9px;
+	float: left;
+	width: 100%;
+}
+.file-box .owner-dp {
+    border-radius: 3px;
+    float: left;
+    height: 20px;
+    overflow: hidden;
+    width: 20px;
+}
+.file-box .owner-dp > img {
+	max-width: 100%;
+    vertical-align: top;
+}
+.file-box .owner-name {
+    float: left;
+    font-family: "ProximaNova-Regular";
+    overflow: hidden;
+    padding-left: 6px;
+    padding-top: 2px;
+    text-overflow: ellipsis;
+    width: 160px;
+	white-space: nowrap;
+	text-align: left;
+    word-break: break-all;
+}
+
+.file-actions{
+	float:left;
+	width:100%;
+	padding-top:11px;
+	padding-left:5px;
+	bottom: -31px;
+    position: absolute;
+}
+.file-actions ul{
+	margin:0;
+	padding:0;
+}
+.file-actions > ul > li{
+	list-style-type:none;
+	float:left;
+	padding-left:20px;
+	border: none !important;
+}
+.file-actions > ul > li:first-child{
+	padding:0;
+}
+.file-actions > ul > li > span {
+    background: url("../images/sprite.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 17px;
+    width: 19px;
+}
+.file-actions .comment-file{
+	background-position: 0 -555px !important;
+}
+.file-actions .email-file {
+    background-position: -39px -555px !important;
+    width: 21px !important;
+}
+.file-actions .download-file{
+	background-position: -80px -555px !important;
+    width: 21px !important;
+}
+.file-actions .delete-file {
+    background-position: -42px -600px !important;
+    height: 20px;
+	opacity:0;
+	transition: opacity 0.1s ease-in 0s;
+/*	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);*/
+	
+}
+.home-tabs {    
+	clear: both;
+    margin: 0 auto;
+    padding-top: 37px;
+    max-width: 950px;
+}
+
+/* ============== Tabs Overwrites Starts ===================*/
+
+
+.nav-tabs {
+    border-bottom: none !important;
+	float:left;
+}
+.home-tabs > ul > li{
+	position:relative;
+}
+.home-tabs > ul > li.active a {
+	 border-top:3px solid #4f95bb;
+	  color:#4f95bb; 
+}
+.home-tabs > ul > li > a {
+	font-family: 'ProximaNova-Semibold';
+	font-size:16px;
+	color:#909294;
+	border-top:3px solid transparent;
+	border-left:1px solid #daddde;
+	border-bottom:1px solid #daddde;
+	padding: 11px 52px;
+	border-radius: 0 !important;
+	margin: 0;
+	line-height: 100%;
+	background-color:#f5f7f7;
+	min-width: 130px;
+	
+}
+.home-tabs > ul > li > a:focus{
+	background-color:#f5f7f7;
+}
+.home-tabs > ul > li:last-child a:hover{
+	border-left:1px solid #fff;
+}
+.home-tabs > ul > li:last-child a{
+	border-left:1px solid #fff;
+}
+.home-tabs > ul > li:last-child{
+	border-left:1px solid #daddde;
+}
+.home-tabs > ul > li > a:hover {
+	border-top:3px solid transparent;
+	background-color:#f5f7f7 !important;
+	border-color: transparent transparent #daddde #daddde;
+	
+}
+.home-tabs ul > li.active > a,
+.home-tabs ul > li.active > a:hover,
+.home-tabs ul > li.active > a:focus {
+	color:#4f95bb;
+	border-right:1px solid transparent;
+	border-top:3px solid #4f95bb;
+	margin: 0;
+	background-color:#fff !important;
+}
+
+
+/* ============== Tabs Overwrites Ends ===================*/
+
+.strm-launcher{
+	float:left;
+	height:70px;
+	width: 32px;
+	cursor:pointer;
+	background: #4f95bb url("../images/sprite.png") no-repeat scroll 4px 5px;
+}
+
+.home-tabs > ul > li > a .ico-clock {
+    background: url("../images/sprite.png") no-repeat scroll 0 -374px transparent;
+    display: block;
+    height: 19px;
+    margin: 0 auto 10px;
+    width: 22px;
+}
+.home-tabs > ul > li > a .ico-data{
+	background: url("../images/sprite.png") no-repeat scroll 0 -97px transparent;
+    display: block;
+    height: 19px;
+    margin: 0 auto 10px;
+    width: 22px;
+}
+.home-tabs > ul > li > a .ico-parse{
+	background: url("../images/sprite.png") no-repeat scroll 0 -235px transparent;
+    display: block;
+    height: 19px;
+    margin: 0 auto 10px;
+    width: 22px;
+}
+.home-tabs > ul > li > a .notfiy-count {
+	font-family: 'ProximaNova-Extrabld';
+	border-radius: 100px;
+	padding: 1px 11px;
+	position: absolute;
+	top: 10px;
+	left: 106px;
+	color: #fff;
+	font-size: 12px;
+	background-color: #ed552b;
+}
+.home-tabs > ul > li.active a .ico-clock {
+	background-position: 0 -446px;	
+}
+.home-tabs > ul > li.active a .ico-data {
+	background-position: 0 -167px;	
+}
+.home-tabs > ul > li.active a .ico-parse {
+	background-position: 0 -305px; 	
+}
+
+.tab-content {
+    float: left;
+    padding-top: 58px;
+    width: 100%;
+}
+.upload-box .file-wrp{
+	padding-top: 0;
+	text-align: center;
+	cursor:pointer;
+	position:relative;
+}
+.upload-box .upload-name{
+	font-family: 'ProximaNova-Regular';
+	font-size:26px;
+	color:#909294;	
+}
+.file-uploading .file-wrp .upload-content, .file-uploaded .file-wrp .upload-content{
+	top: 87px;
+}
+.file-uploading .upload-name, .file-uploaded .upload-name {
+    color: #31343c;
+    display: inline-block;
+    font-family: "ProximaNova-Regular";
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 175px;
+    word-break: break-all;
+}
+.file-uploading .upload-status{
+	width:100%;	
+	position:absolute;
+	bottom:0px;
+	z-index: 1;
+	height:47%;
+	background-color:#edf0f0;
+}
+.upload-content {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+	top: 33px;
+}
+.icon-status {
+    background: url("../images/upload-sprite.png") no-repeat scroll -3px -2px transparent;
+    display: block;
+    height: 35px;
+    margin: 25px auto 0;
+    width: 36px;
+}
+.file-uploading  .icon-status{
+	background-position: -46px -2px !important;
+}
+.file-uploaded .icon-status{
+	background-position: -96px -2px !important;
+}
+
+
+/*========  Homepage   ========*/
+
+
+/*Homepage page styles*/
+
+body.home{
+	background:none;
+	font-family: 'ProximaNova-Regular';
+}
+.signup-wrp{
+	background-color:#eeeff1;
+	float:left;
+	width:100%;
+}
+.login-header{
+	background-color:#fff;
+	width:100%;
+	padding:23px 0px 10px;
+	border-bottom:1px solid #dddddd;
+}
+.lh-wrp{
+	max-width:962px;
+	margin:0 auto;
+	padding:0 10px 0;
+}
+.bp-logo {
+    padding-top: 13px;
+}
+.bp-logo a{
+	display:block;
+}
+.login-form{
+	max-width:566px;
+}
+.log-optn-wrp{
+	width:81%
+}
+.login-option{
+	padding:0;
+	width: 100%;
+}
+.login-option .login-input:first-child {
+    margin-right: 16px;
+}
+.login-input{
+	width:219px;
+	border:1px solid #dbdcde;
+	padding:12px 0px 11px 12px;
+	border-radius:3px;
+	font:14px 'ProximaNova-Semibold';
+	color:#a5a5a5;
+}
+.login-label{
+	font-size:14px;
+	font-weight:normal !important;
+	font-family:'ProximaNova-Regular';
+	color:#a5a5a5;
+	padding: 4px 0 0 0;
+	width: 82%;
+}
+.login-label label{
+	padding-left:9px;
+	cursor:pointer;
+	font-weight: normal;
+    margin: 0;
+	font-family:'ProximaNova-Semibold';
+}
+.login-option a{
+	color:#4f94bb;
+	margin-right:-4px;
+}
+.bp-home-content{
+	max-width: 981px;
+	margin: 0px auto;
+	clear: left;
+	padding: 43px 10px 109px;
+}
+.login-btn {
+    background-color: #4f94bb;
+	padding:9px 26px 8px 27px;
+	color:#fff;
+	border:0 none;
+	border-radius:4px;
+	font:14px 'ProximaNova-Bold';
+	margin-top:3px;
+	margin-right: 4px;
+}
+.about-leftpane{
+	padding: 73px 0 0 0;
+	width:39%;
+}
+.signup-rightpane{
+	padding: 0px;
+	width:41.3%;
+}
+.about-leftpane h2, .signup-rightpane h2{
+	margin:0;
+	font:30px 'ProximaNova-Semibold';
+	color:#2f3239;
+}
+.about-leftpane h2{
+	font:24px/50px 'exo_2regular';
+	color:#2f323b;
+	padding-bottom:17px;
+}
+.al-links a {
+    float: left;
+    clear: left;
+	color:#4F94BB;
+}
+.signup-rightpane span{
+	font:14px 'ProximaNova-Semibold';
+	color:#7c7d81;
+	padding-top:3px;
+}
+.signup-form {
+	padding-top:19px;
+}
+.signup-option .login-input{
+	background:url(../images/signup-sprite.png) no-repeat scroll 8px 10px #fff;
+	width:100%;
+	margin-bottom:13px;
+	padding:12px 0px 11px 39px;
+}
+.signup-user{
+	background-position:8px 10px;
+}
+.signup-email{
+	background-position:8px -43px !important;
+}
+.signup-pass{
+	background-position:8px -96px !important;
+}
+.secure-data {
+    padding-top: 12px;
+	width:100%;
+}
+.secure-data label {
+    font: 14px "ProximaNova-Semibold";
+	padding: 4px 0 5px 7px;
+	margin: 0;
+	cursor:pointer;
+}
+.secure-data .login-input{
+	float:left;
+	width:100%;	
+}
+.login-disabled{
+	pointer-events:none;
+	background-color:#e6e6e6;
+}
+.signup-btn {
+    padding: 11px 42px 11px 43px;
+	background-color: #ed562b;
+	color:#fff;
+	border:0 none;
+	border-radius:4px;
+	font:14px 'ProximaNova-Bold';
+	margin-top:30px;
+}
+.login-footer{
+	background-color:#eeeff1;
+	border-top:1px solid #ddd;
+	width:100%;
+	min-height:193px;
+	padding-top:19px;
+}
+.lf-wrp{
+	max-width:996px;
+	margin:0 auto;
+	padding:0 10px 0;
+	font-size:12px;
+	color:#8f9092;
+	clear:both;
+}
+.lf-nav ul{
+	list-style-type:none;
+	margin: 0px;
+	padding: 0px;
+}
+.lf-nav ul li{
+	float:left;
+}
+.lf-nav ul li a{
+	color:#8f9092;
+	margin:0 9px;
+	font-family: "ProximaNova-Regular";
+}
+.ownership span{
+	padding-right:10px;
+	font-family: "ProximaNova-Regular";
+}
+.ownership a{
+    padding-top: 2px;
+}
+
+/*========  Homepage  Ends ========*/
+
+
+/* =========== and the parsing begins ============ */
+
+.light-box {
+    background: none repeat scroll 0 0 #fff;
+    height: 636px;
+    left: 14%;
+    min-height: 636px;
+    min-width: 800px;
+	margin-right:20px;
+    position: absolute;
+    top: 80px;    
+    z-index: 1001;
+	overflow:hidden;
+	border-radius:3px;
+	border:1px solid #dbdddc;
+	max-width:1329px;
+}
+.overlay{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    z-index: 1000;
+}
+.dgp-header {
+    border-bottom: 1px solid #dddddd;
+    float: left;
+    padding: 12px 0 13px;
+    width: 100%;
+}
+.dgph-wrp {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.parsing-head {
+    float: left;
+    padding-top: 9px;
+	font: 14px "ProximaNova-Regular";
+}
+.parsing-head > span {
+    padding: 0 4px;
+	font:14px 'ProximaNova-Bold';
+}
+.tabs-select {
+    float: left;
+}
+.dgph-wrp .close-btn {
+	background: url("../images/sprite.png") no-repeat scroll 0px -702px #fff;
+	display:block;
+	width:21px;
+	height:23px;
+	float:right;
+	margin-top: 8px;
+	cursor:pointer;
+}
+.dgp-container{
+	float:left;
+	width:100%;
+}
+.dgp-container .tab-content {
+    padding: 16px 34px 0 38px;
+}
+.file-info {
+    float: left;
+	padding: 0 6px;
+}
+.file-name {
+    float: left;
+	width: 217px;
+	border:1px solid #d9ddde;
+	margin-left: 8px;
+}
+.file-name > span {
+    color: #494949;
+    float: left;
+    font-family: "ProximaNova-Regular";
+    font-size: 14px;
+    line-height: 100%;
+    max-width: 143px;
+    overflow: hidden;
+    padding: 9px 0 8px 9px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.file-ext {
+	background: url("../images/dd-arrow.jpg") repeat-x scroll -1px -755px transparent;
+    border-left: 1px solid #d9ddde;
+    float: right;
+    overflow: hidden;
+    width: 67px;
+}
+.file-ext select {
+	background: url("../images/dd-arrow.jpg") no-repeat scroll 47px center transparent;
+    border: 0 none;
+    float: left;
+    padding: 0;
+	font-family: "ProximaNova-Regular";
+    font-size: 14px;
+    line-height: 100%;
+	color:#919296;
+	padding: 8px 0 7px;
+	width: 83px;
+	cursor:pointer;
+}
+.file-lock {
+    float: left;
+	width: 21px;
+	height:18px;
+	margin: 7px 10px 0 11px;
+}
+.fl-btn {
+	background: url("../images/sprite.png") repeat-x scroll -1px -755px #fff;
+    border: 0 none;
+    float: left;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+.data-dd {
+    clear: both;
+    margin: 0;
+    padding: 7px 0 0 10px;
+	list-style-type:none;
+	float:left;
+	position:relative;
+}
+.data-dd li {
+    display: block;
+}
+.data-dd > li > ul {
+    list-style-type:none;;
+    padding: 0;
+	position: absolute;
+    top: 27px;
+	display:none;
+}
+.data-dd > li > a {
+    background: url("../images/dd-arrow.jpg") no-repeat scroll right center transparent;
+    float: left;
+    padding-right: 21px;
+}
+.delimiter-container {
+    float: left;
+    width: 100%;
+	padding: 0 0 14px;
+}
+.delimiter-head{
+	float: left;
+	padding-bottom: 8px;
+}
+.delimiter-head h2{
+	color: #494949;
+    float: left;
+    font-family: "ProximaNova-Regular";
+    font-size: 14px;
+    line-height: 100%;
+	margin:0;
+}
+.dgp-footer {
+    float: left;
+    width: 100%;
+	background-color:#eeeff1;
+	border-top:1px solid #dbdcde;
+	padding:11px 0;
+}
+.dgpf-wrp {
+    float: left;
+    padding: 0 37px;
+    width: 100%;
+}
+.dgpf-wrp .parse-act-btn .submit-btn{
+}
+.dgpf-wrp .parse-act-btn .cancel-btn{
+}
+.parse-act-btn {
+    float: right;
+	padding-right: 14px;
+}
+.parse-act-btn .submit-btn, .parse-act-btn .cancel-btn{
+	background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 3px;
+    color: #7c7d82;
+    float: left;
+	font-family:'ProximaNova-Regular';
+	font-size:16px;
+	line-height:37px;
+	height: 34px;
+}
+.cancel-btn {
+   margin: 0 18px 0 29px;
+}
+.parse-act-btn > a.cancel-btn:hover{
+	color: #7c7d82;
+}
+.parse-act-btn .submit-btn{
+	background:#4f94bb;
+	color:#fffeff;
+	line-height:100%;
+	padding: 0 39px 0 34px;
+}
+.dgpf-wrp .parse-act-btn .submit-btn{
+	box-shadow: 0px 1px 0px 0px #60ADD7 inset;
+	height: 40px;
+	font-family: "ProximaNova-Bold";
+	border: 1px solid #356E8C;
+}
+.dgpf-wrp .parse-act-btn .cancel-btn{
+	font-family: "ProximaNova-Bold";
+	margin: 15px 18px 0px 29px;
+	line-height: 100%;
+	height:auto;
+}
+/* =========== Parsing Ends Here ============ */
+
+/* ========== Tab Overwrites for Parser ===================*/
+
+.dgp-container > ul {
+	padding-left:37px;
+}
+.dgp-container > ul > li{
+	position:relative;
+}
+.dgp-container > ul > li.active a {
+	 border-top:3px solid #4f95bb;
+	  color:#4f95bb; 
+}
+.dgp-container > ul > li > a {
+	font-family: 'ProximaNova-Semibold';
+	font-size:16px;
+	color:#909294;
+	border-top:3px solid transparent;
+	border-left:1px solid #daddde;
+	border-bottom:1px solid #daddde;
+	padding: 10px 52px;
+	border-radius: 0 !important;
+	margin: 0;
+	line-height: 100%;
+	background-color:#f5f7f7;
+	min-width: 130px;
+	
+}
+.dgp-container > ul > li > a:focus{
+	background-color:#f5f7f7;
+}
+.dgp-container > ul > li:last-child a:hover{
+	border-left:1px solid #fff;
+}
+.dgp-container > ul > li:last-child a{
+	border-left:1px solid #fff;
+}
+.dgp-container > ul > li:last-child{
+	border-left:1px solid #daddde;
+}
+.dgp-container > ul > li > a:hover {
+	border-top:3px solid transparent;
+	background-color:#f5f7f7 !important;
+	border-color: transparent transparent #daddde #daddde;
+	
+}
+.dgp-container ul > li.active > a,
+.dgp-container ul > li.active > a:hover,
+.dgp-container ul > li.active > a:focus {
+	color:#4f95bb;
+	border-right:1px solid transparent;
+	border-top:3px solid #4f95bb;
+	margin: 0;
+	background-color:#fff !important;
+}
+
+/* ========== Tab Overwrites for Parser Ends Here ===================*/
+
+.dgp-container > ul > li > a .ico-check {
+    background: url("../images/sprite.png") no-repeat scroll -25px -839px transparent;
+    display: block;
+    height: 21px;
+    margin: 0 auto 10px;
+    width: 22px;
+}
+.dgp-container > ul > li.active > a .ico-check {
+	background-position: 0 -839px	
+}
+
+
+/* =========== Parsing Ends Here ============ */
+
+/* =========== Data Grid Starts Here ============ */
+.dg_header {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+	min-height: 105px;
+}
+.dg_header .dg_wrp {
+    width: 100%;
+	min-height: inherit;
+}
+.dg_logo {
+    background-color: rgb(79, 148, 187);
+	min-height: inherit;
+	width:90px;
+}
+.dg_logo a {
+    display: block;
+    line-height: 105px;
+	text-align:center;
+}
+.bp-user-info {
+    padding: 20px 0 0 33px;
+}
+.bp-user-info > a {
+    float: left;
+	font-size:15px;
+	font-family:'ProximaNova-Regular';
+	color:#4f94bb;
+	line-height: 100%;
+}
+.pf-name {
+    clear: left;
+    padding: 8px 0 4px;
+}
+.pf-name h1{
+    float: left;
+	margin:0;
+	font-size:20px;
+	font-family:'ProximaNova-Semibold';
+	color:#494949;
+	text-transform:capitalize;
+	line-height: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 345px;
+	overflow: hidden;
+}
+.pf-name span{
+    float: left;
+	font-size:20px;
+	font-family:'ProximaNova-Semibold';
+	color:#494949;
+	line-height: 100%;
+}
+.bp-user-info ul {
+    padding: 0;
+}
+.bp-user-info ul li a{
+	color:#494949;
+}
+.pf-actions {
+    position: relative;
+    bottom: 0;
+    width: auto;
+    padding: 43px 36px 0px 0px;
+}
+.email-pop, .download-pop{
+	position:relative;
+}
+.email-pop .pop-over{
+	top: 30px;
+    left: -351px;	
+}
+.email-pop .pop-over .arrow-center {
+	left: 91%;
+}
+.email-popup-header {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+	padding: 17px 0px 10px;
+}
+.email-popup-header .eph-wrp{
+	width: 100%;
+}
+.eph-wrp .eph-opts {
+    padding-left: 16px;
+}
+.eph-wrp .eph-opts label{
+	font-weight: normal;
+	color: #494949;
+	line-height: 23px;
+	margin: 0;
+	padding-left:9px;
+	cursor:pointer;
+}
+.email-pop .pop-over .pop-over-content {
+    width: 360px;
+	padding:0px 8px 0px 0px;
+	margin:27px 14px 0;
+	border-top: 1px solid #dcdddf;
+	border-right: 1px solid #dcdddf;
+	border-radius:0 3px 0 0;
+	position:relative;
+	height: auto;
+	float: left;
+}
+.pop-over-content span.slide-control{
+	background: url("../images/dd-arrow.jpg") no-repeat scroll right center #FFF;
+	display: block;
+	position: absolute;
+	height: 28px;
+	right: -6px;
+    top: 18px;
+    width: 16px;
+	cursor:pointer;
+}
+.pop-content-wrp{
+	width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: -12px;
+    padding-right: 8px;
+}
+.email-form {
+	position: relative;
+	padding-bottom: 31px;
+}
+.email-label-container {
+	width: 100%;
+}
+.email-label-container label{
+	font-weight:normal;
+	cursor:pointer;
+	color: #494949;
+}
+.email-label-container label.el-ep{
+	padding-left:11px;
+}
+.email-form .input-field{
+	float:left;
+	width:100%;
+	margin-bottom:12px;
+	border: 1px solid #D9DDDE;
+	border-radius: 3px;
+	color: #A5A5A5;
+	font: 14px "ProximaNova-Semibold";
+	padding: 12px 0 11px 11px;
+}
+.email-form .text-area{
+	resize:none;
+	min-height:73px;
+}
+.email-form .email-opts {
+    width: 100%;
+	padding-top: 4px;
+}
+.email-form .email-opts a{
+    color: #ababab;
+	float: left;
+	margin-left: 15px;
+}
+.email-form .email-opts a:hover{
+	color: #ababab;
+}
+.pop-over .pop-over-footer.email-footer{
+	padding-bottom: 11px;
+    padding-top: 10px;	
+}
+.email-attachment {
+    position: relative;
+    left: -4px;
+    width: 107.5%;
+	background-color: #fff;
+    padding: 9px 0 8px 0;
+}
+.attachment-wrp{
+	background-color:#eeeff1;
+	border: 1px solid #D9DDDE;
+	border-radius: 3px;
+	float: left;
+    width: 100%;
+	padding:7px 0 6px;
+}
+
+.attachment-wrp .attachment-icon{
+	background:url("../images/sprite.png") no-repeat scroll -42px -701px transparent;
+	width:19px;
+	height:13px;
+	float:left;
+	margin-left:8px;
+	display:inline-block;
+	margin-top: 4px;
+}
+.attachment-name ul{
+	list-style-type:none;
+	position: relative;
+}
+.attachment-name > ul > li > a{
+	margin-left:10px;
+    color: #494949;
+	float:left;
+	text-transform:capitalize;
+}
+.attachment-name > ul > li > a{
+	background: url("../images/dd-arrow.jpg") no-repeat scroll right 8px transparent;
+	padding-right: 16px;
+}
+.attachment-label {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 125px;
+	overflow: hidden;
+	float: left;
+}
+.attachment-name a:hover{
+	color: #494949;
+}
+.attachment-name ul.ext-popup {
+    position: absolute;
+	right: -64px;
+	top: 26px;
+	width:95px;
+}
+.attachment-name ul.ext-popup li a{
+	padding:7px 0px 9px 15px;
+}
+.attachment-name ul.ext-popup .arrow-center {
+    left: 16px;
+}
+.attachment-size{
+	float:right;
+	margin-right:14px;
+}
+.email-form .email-opts label {
+    font-weight: normal;
+	margin: 0;
+	cursor:pointer;
+	padding-left:11px;
+	line-height: 23px;
+}
+.btn-upgrade-small{
+    margin-left: 9px;
+    width: 71px;
+    padding: 2px;
+    font-size: 11px;
+    line-height: 20px;
+}
+.download-pop .down-popup {
+    width: 225px;
+    left: -174px;
+    top: 30px;
+}
+.down-popup .arrow-center{
+	left: 87%;
+}
+.down-popup li h3{
+	font-family: 'ProximaNova-Bold';
+	font-size:16px;
+	margin:0;
+	padding: 16px 0 14px 23px;
+}
+.down-popup li.excel-icon a {
+    background: url("../images/sprite.png") no-repeat scroll -62px -328px transparent;
+}
+.down-popup li.csv-icon a{
+	background: url("../images/sprite.png") no-repeat scroll -62px -364px transparent;
+}
+.down-popup li.pdf-icon a{
+	background: url("../images/sprite.png") no-repeat scroll -62px -403px transparent;
+}
+.down-popup li.mr-icon span{
+	background: url("../images/sprite.png") no-repeat scroll -62px -439px transparent;
+}
+.down-popup li a, .down-popup li span{
+	padding: 9px 0 7px 50px;
+}
+.down-popup li span{
+	color:#ababab;
+	float: left;
+}
+.down-popup li.mr-icon .btn-upgrade-small {
+    float: right;
+    margin-bottom: 8px;
+    margin-right: 7px;
+    margin-top: 7px;
+}
+.pd-filter{
+	width: 100%;
+}
+.filter-wrp {
+    margin: 19px 27px 19px;
+	position: relative;
+}
+.filter-wrp .input-field {
+    width: 100%;
+	padding: 12px 0px 11px 19px;
+	border: 1px solid #d9ddde;
+	border-radius: 3px;
+	color: #A5A5A5;
+	font: 14px "ProximaNova-Semibold";
+}
+.filter-wrp span.filter-search-icon{
+	background: url("../images/sprite.png") no-repeat scroll -42px -514px transparent;
+	position: absolute;
+	width: 16px;
+	height: 15px;
+	display: block;
+	right: 16px;
+	top: 11px;
+	cursor:pointer;
+}
+/* =========== Data Grid Ends Here ============ */
+
+/* ============ Reset Password Starts =============== */
+
+.reset-pass-widget{
+	max-width:481px;	
+}
+.reset-pass-widget h1{
+	font-family: 'ProximaNova-Semibold';
+	font-size:30px;
+	margin: 0 0 12px;
+}
+.reset-pass-widget h2{
+	font-family: 'ProximaNova-Regular';
+	font-size:18px;
+	margin: 0 0 12px;
+}
+.reset-pass-widget h3{
+	font-family: 'ProximaNova-Regular';
+	font-size:18px;
+	color:#4f95bb;
+	margin: 0 0 18px;
+}
+
+@media (max-width: 992px) {
+
+.head_wrap header .logo {
+    padding-left: 10px;
+    padding-right: 15px;
+}	
+.head_wrap header .menu-bar .pop-over {
+    left: -247px;
+}
+.pop-over .arrow-center {
+    left: 88%;
+}
+.head_wrap header .menu-bar {
+	margin-right: 30px;
+}
+.row {
+	margin: 0 auto !important;
+	max-width: 650px;
+}
+.file-box{
+	display:inline-block;
+	float:none;			
+}
+.col-xs-13{
+	text-align:center;	
+}
+/*========  Homepage   ========*/
+.login-btn {
+	margin-right:0;
+}
+.bp-home-content {
+    padding: 43px 15px 109px;
+}
+/*========  Homepage   ========*/	
+}
+
+@media (max-width: 768px){
+
+.head_wrap header .global-search {
+    width: 80%;
+}
+.head_wrap header .menu-bar {
+    float: left;
+	margin-left: 30px;
+	margin-right:0;
+}
+.nav-tabs {
+    display: table;
+    table-layout: fixed;
+}
+.home-tabs > ul > li {
+    display: table-cell;
+    float: none;
+    position: relative;
+}
+
+.home-tabs > ul > li > a {
+    padding: 11px 27%;
+	text-align:center;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.home-tabs > ul > li > a .notfiy-count{
+	left:69%;
+}
+.strm-launcher {
+	display: table-cell;
+    float: none;
+}
+.hidden-mobile {
+    display: none !important;
+}
+.head_wrap header .menu-bar {
+    float: left;
+    margin-left: 24px;
+}
+.file-box {
+    margin-bottom: 65px;
+}
+.row{
+	max-width: 500px;
+}
+/*========  Homepage   ========*/
+.login-header {
+    padding: 23px 0px 25px;
+}
+.lh-wrp {
+    padding: 0px 19px;
+}
+.bp-logo {
+    width: 172px;
+    margin: 0px auto;
+    float: none !important;
+    padding-top: 0px;
+    padding-bottom: 26px;
+}
+.login-form {
+    max-width: 60%;
+	float: none !important;
+	margin: 0px auto;
+}
+.log-optn-wrp {
+    float: none !important;
+    width: 100%;
+}
+.login-option .login-input {
+    width: 100%;
+}
+.login-option .login-input:first-child {
+    margin-bottom: 13px;
+}
+.login-label {
+    width: auto;
+	padding:8px 0 0;
+}
+.login-option a {
+    margin: 15px 0px 0px;
+    clear: left;
+    float: left !important;
+}
+.login-btn {
+    margin: 16px 0 0 0;
+    float: left !important;
+}
+.bp-home-content {
+    max-width: 60%;
+    padding: 31px 12px 33px;
+}
+.about-leftpane {
+    width: 100%;
+	padding: 35px 0px 0px;
+}
+.about-leftpane h2 {
+	text-align:center;
+	padding-bottom: 23px;
+}
+.signup-rightpane {
+    width: 100%;
+}
+.al-links {
+    float: none !important;
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+}
+.al-links a {
+    float: none;
+	display: inline-block;
+}
+/*========  Homepage   ========*/
+
+/*========  Reset password   ========*/
+.reset-pass-widget {
+    margin: 0 auto;
+}
+.reset-pass-widget h1 {
+    font-size: 25px;
+}
+.reset-pass-widget h2 {
+    font-size: 15px;
+}
+.reset-pass-widget h3 {
+    font-size: 15px;
+}
+
+}
+
+@media (max-width: 480px){
+.head_wrap header .global-search {
+    width: 70%;
+}
+.home-tabs > ul > li {
+    display: none;
+}
+.home-tabs > ul > li:nth-child(-n+2) {
+	display: table-cell;
+}
+.home-tabs > ul > li > a {
+    padding: 11px 20%;
+}
+.row {
+    max-width: 480px;
+}
+.col-xs-13{
+	width: 100% !important;	
+}
+.lf-nav {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+.lf-nav ul {
+    display: inline-block;
+}
+.ownership {
+	float: none;
+    text-align: center;
+    width: 100%;
+}
+.ownership-wrp{
+	display:inline-block;
+	padding-top: 12px;
+}
+/*========  Homepage   ========*/
+.login-form {
+    max-width: 80%;
+}
+.bp-home-content {
+    max-width: 80%;
+}
+.about-leftpane h2 {
+	font-size:20px;
+}
+.al-links {
+    width: 75%;
+}
+.al-links a {
+    font-size: 12px;
+}
+/*========  Homepage   ========*/
+
+}
+
+@media (max-width: 320px){
+	/*========  Homepage   ========*/
+.about-leftpane h2 {
+	font-size:17px;
+}
+	/*========  Homepage   ========*/
+}
